@@ -8,6 +8,16 @@
 OBJECTIVE
  The objective of the project "Deep Relation: Utilizing Facial Recognition for Blood Relation Identification" is to develop an advanced system capable of accurately identifying and inferring blood relations solely from facial images.
 
+DATASETS:
+1.KinFaceW-I and KinFaceW-II(used in Developing and Training a VGG16 model.)
+  [There are four kin relations in two datasets: Father-Son (F-S), Father-Daughter (F-D), Mother-Son (M-S), and Mother-Daughter (M-D).
+  In the KinFaceW-I dataset, there are 156, 134, 116, and 127 pairs of kinship images for these four relations.
+  For the KinFaceW-II dataset, each relation contains 250 pairs of kinship images.]
+2.Families in wild(Used in  pre-trained model (Inception ResnetV1))
+  [FIW (Families In The Wild)
+FIW is a large and comprehensive database available for kinship recognition.
+FIW is made up of 11,932 natural family photos of 1,000 families-- nearly 10x more than the next-to-largest, Family-101 database.]
+
 PROJECT WORKFLOW
 We had applied two approaches to accomplish the project as desired according to the problem statement: -
 	Developing and Training a VGG16 model.
@@ -19,7 +29,7 @@ We had applied two approaches to accomplish the project as desired according to 
 5.1-INCEPTION RESNET V1:
 Inception ResNet v1 is a convolutional neural network architecture developed to excel in image classification tasks. Combining the strengths of both the Inception and ResNet architectures, it features inception modules with residual connections, allowing for efficient information flow and deeper network training while mitigating the vanishing gradient problem. With its intricate design, Inception ResNet v1 achieves impressive performance on various benchmark datasets, providing state-of-the-art results in image recognition tasks by leveraging parallel and multi-scale feature extraction, enabling robust representation learning, and facilitating more accurate predictions with relatively lower computational costs compared to other contemporary architectures.
 
-TRAINING A VGG16 MODEL:
+TRAINING A VGG16 MODEL:(code(Untitled1.ipynb)
 1.1	Loading the VGG16 Model:
 Using an open-source neural network library which is written in python named KERAS has a keras Applications module that consists of various pre-trained models which are trained on the ImageNet Dataset. So, we use this module to load the VGG16 model that must be trained on our dataset (KinFaceW-1).
    
@@ -36,7 +46,7 @@ Drawbacks of using VGG16: -
 	It has only 16 layers that are not appropriate for calculating the similarity between the images accurately.
 	 Inception ResNetV1 can achieve higher accuracy on tasks like image classification than VGG16 model.
 
-USING A INCEPTION RESNETV1:
+USING A INCEPTION RESNETV1:(code(vggface.ipynb)
 Importing Libraries: The script imports necessary libraries including os, torch, PIL, numpy, facenet_pytorch, and matplotlib.pyplot.
 Function Definitions:
 get_all_image_paths(folder_path): Retrieves paths of all image files (.png, .jpg, .jpeg) within a specified folder.
