@@ -48,29 +48,47 @@ Drawbacks of using VGG16: -
 
 USING A INCEPTION RESNETV1:(code(vggface.ipynb)
 Importing Libraries: The script imports necessary libraries including os, torch, PIL, numpy, facenet_pytorch, and matplotlib.pyplot.
+
+
 Function Definitions:
+
 get_all_image_paths(folder_path): Retrieves paths of all image files (.png, .jpg, .jpeg) within a specified folder.
+
 display_result(input_image_path, folder_image_paths, similarity_scores, output_folder): Displays the input image and the most similar images from the folder along with their similarity scores. It also saves the result as an image file.
+
 save_output_to_text(output_file, input_image_path, highest_similarity_folder, highest_similarity, folder_image_paths, similarity_scores): Saves the output details including input image path, most similar folder, similarity score, and details of folder images with their similarity scores to a text file.
+
 get_facial_features(image_path): Extracts facial features from an image using MTCNN and InceptionResnetV1 models.
+
 calculate_similarity(features1, features2): Calculates the cosine similarity between two sets of facial features.
+
 get_highest_similarity_folder(input_image_path, root_folder_path): Determines the folder containing images most similar to the input image based on facial similarity.
 Main Execution:
+
 Defines a list of input image paths, root folder path, output folder path, and output file path.
+
+
 Iterates through each input image:
+
 Calculates the most similar folder and its similarity score.
+
 Displays the results.
+
 Saves the output to a text file.
+
 Execution:
+
 The script executes the main part of the code if it's run as the main program (__name__ == "__main__").
+
 Input and Output Paths:
 Input image paths and root folder paths are specified.
 The output is saved in both image and text formats in the specified output folder.
+
 Facial Similarity Calculation:
 The script uses pre-trained models to extract facial features from images and computes the similarity score between the input image and each image in the root folder.
 Overall, this script provides a comprehensive solution for comparing facial similarity between an input image and a set of images in a folder, aiding in tasks such as facial recognition, classification, or search.
 
-Graphs:
+
 ![Screenshot 2024-04-25 184625](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/8c68afab-61bd-49fa-8ede-c8a4353df130)
 
 ![Screenshot 2024-04-25 184513](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/0e9386b2-4b0a-4321-823a-5e3c87f27577)
