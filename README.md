@@ -13,6 +13,9 @@ We had applied two approaches to accomplish the project as desired according to 
 	Developing and Training a VGG16 model.
 	Using a pre-trained model (Inception ResnetV1).
 
+![Screenshot 2024-04-25 184804](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/5c9faeeb-fa48-4449-87b1-ced86cb7ad98)
+
+
 5.1-INCEPTION RESNET V1:
 Inception ResNet v1 is a convolutional neural network architecture developed to excel in image classification tasks. Combining the strengths of both the Inception and ResNet architectures, it features inception modules with residual connections, allowing for efficient information flow and deeper network training while mitigating the vanishing gradient problem. With its intricate design, Inception ResNet v1 achieves impressive performance on various benchmark datasets, providing state-of-the-art results in image recognition tasks by leveraging parallel and multi-scale feature extraction, enabling robust representation learning, and facilitating more accurate predictions with relatively lower computational costs compared to other contemporary architectures.
 
@@ -26,6 +29,8 @@ Using an open-source neural network library which is written in python named KER
 1.4- Data Collection And Preparation
 The dataset used is “kinface”. Kinship is made up of 1068 Natural family photos of four relations. It is the largest and most comprehensive database available for kinface recognization. It consists of 524 image pairs split between four relationships.
 In this project preprocessing the data is not necessary much because the dataset is already too big and comprehensive even though minimal data preprocessing, such as resizing is completed.
+![Screenshot 2024-04-25 184718](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/6e503b2f-7539-4088-b835-7d1f63601b1d)
+
 
 Drawbacks of using VGG16: -
 	It has only 16 layers that are not appropriate for calculating the similarity between the images accurately.
@@ -56,10 +61,11 @@ The script uses pre-trained models to extract facial features from images and co
 Overall, this script provides a comprehensive solution for comparing facial similarity between an input image and a set of images in a folder, aiding in tasks such as facial recognition, classification, or search.
 
 Graphs:
+![Screenshot 2024-04-25 184625](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/8c68afab-61bd-49fa-8ede-c8a4353df130)
+
+![Screenshot 2024-04-25 184513](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/0e9386b2-4b0a-4321-823a-5e3c87f27577)
 
 
-![Screenshot 2024-04-25 173107](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/56d5f092-572a-4855-a386-d7bfafeca0c8)
-![Screenshot 2024-04-25 173212](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/123fe0be-6bd8-42fc-98b6-421325ba9024)
 
 
 
