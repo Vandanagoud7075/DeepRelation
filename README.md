@@ -55,5 +55,11 @@ Facial Similarity Calculation:
 The script uses pre-trained models to extract facial features from images and computes the similarity score between the input image and each image in the root folder.
 Overall, this script provides a comprehensive solution for comparing facial similarity between an input image and a set of images in a folder, aiding in tasks such as facial recognition, classification, or search.
 
- 
+Graphs:
+
+
+![Screenshot 2024-04-25 173107](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/56d5f092-572a-4855-a386-d7bfafeca0c8)
+![Screenshot 2024-04-25 173212](https://github.com/Vandanagoud7075/DeepRelation/assets/136419038/123fe0be-6bd8-42fc-98b6-421325ba9024)
+
+
 
